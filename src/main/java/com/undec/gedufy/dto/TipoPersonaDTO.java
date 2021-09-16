@@ -1,5 +1,7 @@
 package com.undec.gedufy.dto;
 
+import com.undec.gedufy.model.TipoPersona;
+
 public class TipoPersonaDTO {
     private Integer id;
     private String nombre;
@@ -19,4 +21,14 @@ public class TipoPersonaDTO {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public TipoPersona getTipoPersona(TipoPersonaDTO tipoPersonaDTO){
+        TipoPersona tipoPersona = new TipoPersona();
+
+        tipoPersona.setId(tipoPersonaDTO.getId());
+        tipoPersona.setNombre(tipoPersonaDTO.getNombre());
+
+        return tipoPersona;
+    }
+
 }

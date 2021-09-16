@@ -69,4 +69,16 @@ public class CursoDTO {
 
         return cursoDTO;
     }
+
+    public Curso getCurso(CursoDTO cursoDTO) {
+        Curso curso = new Curso();
+        curso.setId(cursoDTO.getId());
+        curso.setNombre(cursoDTO.getNombre());
+        curso.setDescripcion(cursoDTO.getDescripcion());
+        curso.setPrecio(cursoDTO.getPrecio());
+        curso.setCantHoras(cursoDTO.getCantHoras());
+        curso.setImagen(cursoDTO.getImagen());
+
+        return curso;
+    }
 }

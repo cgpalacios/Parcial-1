@@ -40,7 +40,7 @@ public class PersonaCursoController {
     }
 
     @PostMapping
-    public ResponseEntity<Response> post(@RequestBody Object input) {
+    public ResponseEntity<Response> post(@RequestBody PersonaCursoDTO input) {
         Response response = personaCursoService.save(input);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
